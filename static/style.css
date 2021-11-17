@@ -1,0 +1,15 @@
+body{
+    background-color : darkslategray;
+    color: white;
+    text-shadow: black;
+    margin-left: 25px;
+}
+
+#rcorners1 {
+  border-radius: 25px;
+  background: darkslategrey;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
