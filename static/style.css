@@ -5,7 +5,7 @@ body{
     margin-left: 25px;
 }
 
-#rcorners1 {
+.rcorners1 {
   border-radius: 25px;
   background: darkslategrey;
   margin-top: 10px;
@@ -13,3 +13,6 @@ body{
   margin-right: 10px;
 }
 
+#paddown {
+      padding-top: 100px
+    }
