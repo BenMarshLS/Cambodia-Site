@@ -3,9 +3,17 @@
     "templates/index.html": [
       {
         "id": "45c99e2f-eeeb-439d-9632-2212af3ab387",
-        "line": 6,
-        "version": 574,
-        "index": 80
+        "line": 4,
+        "version": 598,
+        "index": 78
+      }
+    ],
+    "templates/info.html": [
+      {
+        "id": "b75d7a92-594a-4e5b-b623-c4514187f47b",
+        "line": 1,
+        "version": 35,
+        "index": 0
       }
     ]
   }

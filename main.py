@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, url_for, redirect
+
 import random, string
 
 app = Flask(__name__)
@@ -21,6 +22,10 @@ def charity():
 def memory():
   return render_template("memory.html")
 
+@app.route("/info", methods= ["GET", "POST"])
+def info():
+  return render_template("info.html")
+
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=random.randint(2000, 9000))
+    app.run(host='0.0.0.0', port=2000)
