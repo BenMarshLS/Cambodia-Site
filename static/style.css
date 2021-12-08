@@ -3,16 +3,20 @@ body{
     /*margin-left: 25px;*/
 }
 
+
 .main {
     margin-left: 30px;
 }
-#rcorners1 {
+.rcorners1 {
   border-radius: 25px;
   background: darkslategrey;
   margin: 20px;
 }
 
-
 .navbar {
     background-color : #7fc797 !important;
 }
+#paddown {
+      padding-top: 100px
+    }
+

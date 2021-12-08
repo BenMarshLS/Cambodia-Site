@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, url_for, redirect
+
 import random, string
 
 app = Flask(__name__)
@@ -13,6 +14,18 @@ def index():
 def contact():
   return render_template("contact.html")
 
+@app.route("/charity", methods= ["GET", "POST"])
+def charity():
+  return render_template("charity.html")
+
+@app.route("/memory", methods= ["GET", "POST"])
+def memory():
+  return render_template("memory.html")
+
+@app.route("/info", methods= ["GET", "POST"])
+def info():
+  return render_template("info.html")
+
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=3500)
+    app.run(host='0.0.0.0', port=2000)
