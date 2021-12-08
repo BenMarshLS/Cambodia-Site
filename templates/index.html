@@ -1,7 +1,12 @@
-{% extends "layout.html" %} {% block body %}
-<h1>About The School</h1>
+{% extends "layout.html" %}
 
-<body>
+{% block body %}
+    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet" />
+    <div class="home">
+        <h1>Lincoln Sudbury Regional High School Cambodia Memorial</h1>
+{#        <imgsrc="{{ url_for('static', filename = 'img/group.jpg') }}" alt="Lincoln Sudbury Regional High School Cambodia Memorial" />#}
+        <p></p>
+    </div>
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -27,11 +32,4 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
-
-    
-    <p class='dont-care'>    The Cambodia Memorial school is located in ... and does ...</p>
-
-  </body>
-
 {% endblock %}
