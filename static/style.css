@@ -1,22 +1,24 @@
 body{
     text-shadow: black;
-    /*margin-left: 25px;*/
 }
 
 
 .main {
     margin-left: 30px;
 }
-.rcorners1 {
-  border-radius: 25px;
-  background: darkslategrey;
-  margin: 20px;
+#rcorners1 {
+    border-radius: 25px;
+    background: darkslategrey;
+    margin: 20px;
+    border-color:black;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .navbar {
     background-color : #7fc797 !important;
 }
 #paddown {
-      padding-top: 100px
-    }
+    padding-top: 100px
+}
 
