@@ -26,6 +26,10 @@ def memory():
 def info():
   return render_template("info.html")
 
+@app.route("/obit", methods= ["GET", "POST"])
+def obit():
+  return render_template("obit.html")
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=2000)

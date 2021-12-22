@@ -1,9 +1,118 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<h1>Memorial</h1>
-  
-	<body>
+<!--<h1>Memorial</h1>-->
+  <style>
 
+
+    #obit a:link {
+      color: black;
+      text-decoration: none;
+    }
+
+    #obit a:hover {
+      text-decoration: double underline;
+      text-decoration-color: #7fc797;
+      text-decoration-thickness: 3px;
+
+      color: black;
+    }
+
+
+    #obit card {
+      //text-align: center;
+      border: none;
+    }
+
+    #obit list-group-item {
+      border: none;
+    }
+  </style>
+
+
+	<body>
+    <h1>Obituaries and Remembrances</h1>
+    <br><br>
+    <div class = "container-fluid" id = "obit">
+      <div class = "row">
+        <div class = "col">
+          <div class="card" style="width: 100%;">
+            <ul class="list-group list-group-flush">
+              <!-- change tag to a and then add href = "" the link -->
+              <a class="list-group-item obit_a" href = "http://www.encyclopedia.com/doc/1P2-7650518.html">ANTON, NANCY - '88</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/fosters/obituary.aspx?n=mark-baldelli&pid=138489939">BALDELLI, MARK - '76</a>
+              <a class = "list-group-item obit_a" href = "http://www.encyclopedia.com/doc/1P2-8273466.html">BABICK, CRAIG - '78</a>
+              <a class = "list-group-item obit_a" href = "http://www.wickedlocal.com/sudbury/local_news/x1849893484">BARDSLEY, MATHEW -'99</a>
+              <a class = "list-group-item obit_a" href = "http://www.highbeam.com/doac/1G1-76975971.html">BOYD, PATRICIA -'73</a>
+              <a class = "list-group-item obit_a" href = "http://www.sudbury.ma.us/documents/dl/2631/InSudburyWeTrust.pdf">CANANAUGH, CHERI-ANNE - '94</a>
+              <a class = "list-group-item obit_a" href = "http://calamemories.blogspot.com/2008/01/blog-post.html">CALA, BRETT - '92</a>
+
+              <a class = "list-group-item obit_a" href = "http://www.umassmag.com/winter_2002/OBITUARIES__1976_99_257.htmlhttp://www.arrangeonline.com/obituary/memorials.asp?obituaryid=64163480">CLOUD, GEOFF - '83</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/wickedlocal-lincoln/obituary.aspx?n=reed-c-cooper&pid=146860915">COOPER, REED</a>
+              <a class = "list-group-item obit_a" href = "http://www.metrowestdailynews.com/news/x1315694273">CYR, TYLER -‘10</a>
+              <a class = "list-group-item obit_a" href = "http://www.wickedlocal.com/sudbury/news/education/x1851006669/L-S-grad-attending-Mount-Holyoke-dies-of-cancer">CUI, AMY -‘08</a>
+              <a class = "list-group-item obit_a" href = "http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=25963148">DANFORTH, PAULA-'81</a>
+              <a class = "list-group-item obit_a" href = "http://hosting-tributes-6450.tributes.com/show/Nicholas-Dimancescu-91571300">DIMANCESCU, NICHOLAS- '03</a>
+              <a class = "list-group-item obit_a" href = "http://listsearches.rootsweb.com/th/read/MA-MDX-WESTFORD/2008-12/1228363526http://www.wickedlocal.com/westford">DRISCOLL, KAREN - '78</a>
+            </ul>
+          </div>
+        </div>
+        <div class = "col">
+          <div class="card" style="width: 100%;">
+            <ul class="list-group list-group-flush">
+              <!-- change tag to a and then add href = "" the link -->
+              <div class = "list-group-item"><a class = "obit_a" href = "http://www.legacy.com/obituaries/charlotte/obituary.aspx?pid=165176397#fbLoggedOut">FISCHER, HOLLY-'92</a><br><a href = "http://www.wsoctv.com/news/news/authorities-car-found-connection-missing-charlotte/nX9XY/">More</a></div>
+              <a class = "list-group-item obit_a" href = "http://www.eagletribune.com/obituaries/x1951924955/Christine-E-Fredella-Harrington-48">FREDELLA, CHRISTINE - '82</a>
+              <div class = "list-group-item"><a class = "obit_a" href = "http://www.simcoecommunications.com/Diana_Golden_B.PDF">GOLDEN, DIANA - '80</a><br><a href = "http://www.encyclopedia.com/doc/1G2-3407900204.html">More</a></div>
+              <a class = "list-group-item obit_a" href = "http://hosting-tributes-6450.tributes.com/show/Graham-Grindlay-90523038">GRINDLAY, GRAHAM - '96</a>
+              <a class = "list-group-item obit_a" href = "http://www.newyorkinjurynews.com/2010/08/31/massachusetts-drunk-driving-crash-that-killed-teen-leads-to-criminal-charges_201008314759.html">HABERMAN, MAX- '09</a>
+              <a class = "list-group-item obit_a" href = "http://www.encyclopedia.com/doc/1P2-8603267.html">JONES, CHEY -'96</a>
+              <a class = "list-group-item obit_a" href = "http://www.wickedlocal.com/sudbury/opinion/x79413118">KARIAN, LILY DIANA -'06</a>
+              <a class = "list-group-item obit_a" href = "http://www.bumafuneralhome.com/obituaries.html?NC=obituary&OBMODE=single&REC=154">KELLEY, EILEEN - '81</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/bostonglobe/obituary.aspx?n=shaun-s-lampila&pid=127215866">LAMPILA, SHAUN -'04</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/heraldtribune/obituary.aspx?n=steven-andrew-larkin&pid=169761204&fhid=8480">ANDREW LARKIN -'96</a>
+              <a class = "list-group-item obit_a" href = "http://www.boston.com/bostonglobe/regional_editions/globe_west/west/2007/01/sudbury_a_memor.html">LEUDERS, TOM -'99</a>
+              <a class = "list-group-item obit_a" href = "http://www.encyclopedia.com/doc/1P2-8025145.html">MACDONALD, GREG -'87</a>
+              <a class = "list-group-item obit_a" href = "http://www.metrowestdailynews.com/news/x2103873272">MCGUIRE JR., JACK -'91</a>
+            </ul>
+          </div>
+        </div>
+        <div class = "col">
+          <div class="card" style="width: 100%;">
+            <ul class="list-group list-group-flush">
+              <div class = "list-group-item"><a class = "obit_a" href = "http://wfmu.org/playlists/shows/33276">MCINTYRE, JAMES - '78</a><br><a href = "http://www.tmbg.org/band-info/early-years/">More</a></div>
+              <a class = "list-group-item obit_a" href = "http://www.boston.com/bostonglobe/obituaries/articles/2007/11/10/roman_meshon_36_taught_english_at_japanese_school">MESHON, ROMAN - '89/</a>
+              <div class = "list-group-item"><a class = "obit_a" href = "http://www.metrowestdailynews.com/features/x2050933886/Army-Ranger-Scott-Milley-mourned-by-family-and-community?img=1">MILLEY, SCOTT - '05</a><br><a href = "http://www.boston.com/news/local/massachusetts/articles/2010/12/05/a_life_lesson_in_duty_love_and_hellish_war/?page=1">More</a><br><a href = "http://www.boston.com/news/local/breaking_news/2010/12/high_school_stu_1.html?p1=Local_Links">Video</a></div>
+              <a class = "list-group-item obit_a" href = "www.obitsforlife.com/obituary/812358/Mohlar-Jody.php">MOHLAR, JODY-'81</a>
+              <a class = "list-group-item obit_a" href = "http://www.boston.com/news/globe/obituaries/articles/2005/07/05/keith_orzech_21_film_student_at_nj_college/">ORZECH, KEITH -'02</a>
+              <a class = "list-group-item obit_a" href = "http://www.highbeam.com/doc/1G1-56447939.html">PANETTA, RICHARD - '74</a>
+              <a class = "list-group-item obit_a" href = "http://www.encyclopedia.com/doc/1P2-8285089.html">PANETTA, SALVATORE -'72</a>
+              <a class = "list-group-item obit_a" href = "http://www.encyclopedia.com/doc/1P2-8310717.html">PHALEN, MICHAEL -'86</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/bostonglobe/obituary.aspx?n=haven-decker-quinn&pid=145957044&fhid=4414">QUINN, HAVEN-'02</a>
+              <a class = "list-group-item obit_a" href = "http://www.hopkinsmedicine.org/som/alumni/support/som_scholarships.html">RAJU, RITA- '88</a>
+              <a class = "list-group-item obit_a" href = "http://www.encyclopedia.com/doc/1P2-8330747.html">READE, CHARLES - '79</a>
+              <a class = "list-group-item obit_a" href = "http://www.boston.com/news/globe/obituaries/articles/2006/08/17/mark_reich_51_his_spirit_and_devotion_spurned_limits/">REICH, MARK - '73</a>
+            </ul>
+          </div>
+        </div> 
+        <div class = "col">
+          <div class="card" style="width: 100%;">
+            <ul class="list-group list-group-flush">
+              <a class = "list-group-item obit_a" href = "http://www.wickedlocal.com/sudbury/obituaries/">REID, DAVID – ‘72</a>
+              <a class = "list-group-item obit_a" href = "http://www.metrowestdailynews.com/news/x72907923/Dad-helps-others-after-sons-struggle-with-addiction">REUBIN, MICHAEL -'04</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/metrowestdailynews/obituary.aspx?page=lifestory&pid=152761731">RHOME, PETER-'96</a>
+              <a class = "list-group-item obit_a" href = "http://www.currentobituary.com/ShowObit.aspx?">ROSENHEIM, MICHAEL- '75</a>
+              <a class = "list-group-item obit_a" href = "http://www.nashuatelegraph.com/news/942199-196/hudson-shooting-victim-and-alleged-killer-were.html">ST. LAURANT, DONALD -'00</a>
+              <a class = "list-group-item obit_a" href = "http://www.sfcfh.com/sitemaker/sites/fitzge0/obit.cgi?user=257430Schneider">SCHNEIDER, GREGORY - '80</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/wickedlocal-sudbury/obituary.aspx?pid=167281444">SEGIEN, KAREN- '81</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/wickedlocal-sudbury/obituary.aspx?n=christopher-david-stranberg&pid=150257730&fhid=10882">STRANBERG, CHRIS - '09</a>
+              <a class = "list-group-item obit_a" href = "http://www.capecodonline.com/apps/pbcs.dll/article?AID=%2F20110313%2FNEWS%2F103130319%2F-1%2FNEWS11">THOMAS, JENIFER-'80</a>
+              <a class = "list-group-item obit_a" href = "http://www.legacy.com/obituaries/bostonglobe/obituary.aspx?n=stephen-robert-wilkinson&pid=147815269">WILKERSON STEPHEN- '88</a>
+              <a class = "list-group-item obit_a" href = "http://www.wickedlocal.com/sudbury/news/x1830135168/Sudbury-man-dies-of-injuries-suffered-in-Concord-crash#axzz1sRhkULAU">ZEBIAN, SAM- '03</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
   </body>
 {% endblock %}
