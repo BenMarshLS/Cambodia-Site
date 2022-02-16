@@ -1,25 +1,18 @@
 {% extends "layout.html" %} {% block body %}
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{{ url_for( 'static', filename='img/cambodiaflag.png' ) }}" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ url_for( 'static', filename='img/cambodiaflag.png' ) }}" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ url_for( 'static', filename='img/cambodiaflag.png' ) }}" class="d-block w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div style="text-align:center;padding-top: 100px; ">
+	<h1>Building the LS Memorial School Video</h1>
+  <iframe src="https://player.vimeo.com/video/16820697?h=28bd6b5c1b " style="border:none;" width="100% " height="960" allow="autoplay; fullscreen; picture-in-picture "
+	 allowfullscreen></iframe>
+
+  <!--<iframe src="https://player.vimeo.com/video/16820697?h=28bd6b5c1b " style="border:none;" width="1280 " height="960" allow="autoplay; fullscreen; picture-in-picture "
+  allowfullscreen></iframe>-->
 </div>
 
+
+
+
+
+
+  
 {% endblock %}

@@ -1,26 +1,35 @@
-{% extends "layout.html" %}
-
-{% block body %}
+{% extends "layout.html" %} {% block body %}
 <h1>How to contact us</h1>
 <br>
 <br>
 <br>
-<br>
-<br>
+
   
 	<body>
     <div style="text-align:center;">
-      <h3>Email: #</h3>
-      <br>
-      <h3>Facebook: #</h3>
-      <br>
+      <a href = ""><h3>Email: #</h3></a>
+      <a href = "https://www.facebook.com/groups/29743772850/"><h3>Facebook</h3></a>
       <h3>Twitter: #</h3>
-      <br>
     </div>
-    
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div style="text-align:center;">
-    <p> <a href="http://www.cambodiaschools.com/"><img src= "{{ url_for('static', filename = 'img/wac-logo.png') }}" alt="World Assistance for Cambodia Logo" width="95" height="88" align="absbottom" style="width:95px;height:88px;vertical-align:middle;margin-right:10px;"></a><a href="https://npo1.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=1005521&amp;code=Website" class="donatebtn">Donate Now</a> &nbsp;  <em>Please designate School #442 on the form</em></p>
-    </div>
-  </body>
+    <br>
+    <br>
+<div style="text-align:center;">
+	<p> <a href="http://www.cambodiaschools.com/"><img src= "{{ url_for('static', filename = 'img/wac-logo.png') }}" alt="World Assistance for Cambodia Logo" width="95" height="88" align="absbottom" style="width:95px;height:88px;vertical-align:middle;margin-right:10px;">
+  </a>
+  <div class="popup" onclick="myFunction()" style="text-align:center;">
+  <button type="button" class="btn btn-primary" style="text-align:center;">Donate Now</button>
+	<span class="popuptext" id="myPopup" style="text-align:center;">Please designate School #442 on the form <br>
+    <a style="text-align:center" href="https://npo1.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=1005521&amp;code=Website" class="donatebtn">Confirm</a> &nbsp;</span></p>
+</div>
+<script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+
+</body>
+
+
 {% endblock %}

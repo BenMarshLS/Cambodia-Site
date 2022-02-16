@@ -3,6 +3,7 @@
 
 
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="/static/img/LSfavicon.ico" rel="icon">
 	<title>Cambodia Memorial</title>
 	<meta charset="utf-8">
@@ -16,7 +17,11 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="rcorners1">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/">Cambodia Memorial</a>
+			<a class="navbar-brand" href="/">
+				<img src="/static/img/images.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      Cambodia Memorial</a>
+      
+
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,9 +34,31 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="/why">Q&A</a>
                                 <a class="dropdown-item" href="/article">Articles</a>
-                                <a class="dropdown-item" href="/addinfo">Link3</a>
+                                <a class="dropdown-item" href="/addinfo">Videos</a>
+                                <a class="dropdown-item" href="/riceProject">The Rice Project</a>
                             </div>
                         </li>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle lstoday g-switcher robotics video-projects web-team" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                In Memory
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/memory">Names</a>
+                                <a class="dropdown-item" href="/obit">Obituaries</a>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="/memory">In Memory</a>
                         </li>
@@ -53,4 +80,47 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     </body>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  <div class = "footer">
+    <div class = "social_media" id = "social_media">
+      <img src="/static/img/images.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+      <p class="footer_name">Cambodia Memorial</p>
+
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="mailto:info@lincolnsudburymemorialschool.org" class="fa fa-envelope"></a>
+      <a href="https://www.facebook.com/groups/29743772850/" class="fa fa-facebook"></a>
+
+      <div class="popup" onclick="popup()" style="text-align:center;">
+        <button type="button" class="btn btn-primary" style="text-align:center;" >Donate Now</button>
+        <span class="popuptext" id="myPopup" style="text-align:center;">Please designate School #442 on the form <br>
+          <a style="text-align:center" href="https://npo1.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=1005521&amp;code=Website" class="donatebtn">Confirm</a> &nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function popup() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+
+
+    var page_height = document.body.scrollHeight;
+    document.getElementById("social_media").style.top = page_height + "px";
+    //console.log(document.getElementById("social_media").style.top);
+
+    if (document.getElementById("home") != null){
+      //console.log(document.getElementById("home").scrollHeight);
+    }
+
+    window.addEventListener("resize", function(){
+      var page_height = document.body.scrollHeight;
+      document.getElementById("social_media").style.top = page_height + "px";
+      //console.log(document.getElementById("social_media").style.top);
+    };);
+  </script>
 </html>
